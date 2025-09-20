@@ -362,13 +362,13 @@ Program ini sekarang lebih modular dan mudah dikembangkan untuk menambahkan jeni
   <img src="https://github.com/user-attachments/assets/49cb2f99-6edf-4dfc-9c86-306a45f0c8e7" alt="" width="500px">
 </div>
 
-<p align="justify">Pembaruan yang saya lakukan pada kali ini ada ketika pengguna menambahkan data pet, sekarang pengguna tidak perlu menginput jenis</p>
+<p align="justify">Pembaruan yang saya lakukan pada kali ini ada ketika pengguna menambahkan data pet, sekarang pengguna tidak perlu menginput jenis dengan mengetik jenis dan spesies pet, namun cukup dengan memilih opsi 1 atau 2.</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4ce44180-2005-4eb2-a8a1-59088c6fb841" alt="" width="500px">
 </div>
 
-<p align="justify"></p>
+<p align="justify">Setelah pengguna menginput pilihannya, maka data berhasil ditambahkan. Perlu diketahui pula bahwa proses validasi juda terdapat pada saat pengguna memilih jenis, jika pengguna memasukkan di luar dari opsi (1&2), maka pengguna diminta menginput kembali.</p>
 
 </details>
 
@@ -379,7 +379,7 @@ Program ini sekarang lebih modular dan mudah dikembangkan untuk menambahkan jeni
   <img src="https://github.com/user-attachments/assets/101e4770-a8a0-44a6-852c-07546efdc3ae" alt="" width="500px">
 </div>
 
-<p align="justify"></p>
+<p align="justify">Pada bagian ini update data pet, pengguna sekarang tidak bisa mengubah jenis pet yang ada.</p>
 
 </details>
 
