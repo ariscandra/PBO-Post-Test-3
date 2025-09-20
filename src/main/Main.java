@@ -62,18 +62,26 @@ public class Main {
         String pemilik = validasiInput(scanner, "Nama Pemilik: ", "pemilik", 40);
         
         // INI OPSI PILIH JENIS
-        System.out.println("Pilih jenis hewan:");
-        System.out.println("1. Kucing");
-        System.out.println("2. Anjing");
-        System.out.print("Pilihan (1-2): ");
-        int jenisPilihan = scanner.nextInt();
-        scanner.nextLine();
-        
-        Pet newPet;
-        if (jenisPilihan == 1) {
-            newPet = new Kucing(null, name, umur, pemilik);
-        } else {
-            newPet = new Anjing(null, name, umur, pemilik);
+        int jenisPilihan;
+        while (true) {
+            System.out.println("Pilih jenis hewan:");
+            System.out.println("1. Kucing");
+            System.out.println("2. Anjing");
+            System.out.print("Pilihan (1-2): ");
+            
+            if (scanner.hasNextInt()) {
+                jenisPilihan = scanner.nextInt();
+                scanner.nextLine();
+                
+                if (jenisPilihan == 1 || jenisPilihan == 2) {
+                    break;
+                } else {
+                    System.out.println("Error: Pilihan harus 1 atau 2!");
+                }
+            } else {
+                System.out.println("Error: Masukkan angka yang valid!");
+                scanner.nextLine();
+            }
         }
         
         petService.tambahPet(newPet);
@@ -217,4 +225,5 @@ public class Main {
             }
         }
     }
+
 }
